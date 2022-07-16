@@ -1,0 +1,3 @@
+[submodule "vim-test"]
+	path = vim-test
+	url = git@github.com:JarekZagorski/vim-customization.git
