@@ -27,7 +27,11 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" turned off for testing of YCM
 Plugin 'https://github.com/ackyshake/VimCompletesMe.git'
+
+" YCM plugin
+" Plugin 'https://github.com/tabnine/YouCompleteMe'
 
 " Draculacolor scheme
 Plugin 'dracula/vim', { 'name': 'dracula' }
@@ -93,13 +97,13 @@ set formatoptions=tcqrn1
 "set shiftwidth=4
 "set softtabstop=4
 
-let tabsize = 2
+let tabsize = 4
 execute "set tabstop=".tabsize
 execute "set shiftwidth=".tabsize
 execute "set softtabstop=".tabsize
 
-set expandtab
-set noshiftround
+"set expandtab
+"set noshiftround
 
 " Display 5 lines above/below the cursor when scrolling with a mouse.
 set scrolloff=5
@@ -109,9 +113,6 @@ set backspace=indent,eol,start
 " Speed up scrolling in Vim
 set ttyfast
 
-" Status bar
-" set laststatus=2
-
 " Display options
 set showmode
 set showcmd
@@ -120,9 +121,9 @@ set showcmd
 set matchpairs+=<:>
 
 " Display different types of white spaces.
-set list
-set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
-set listchars=trail:•,extends:#,nbsp:.
+"set list
+"set listchars=trail:•,extends:#,nbsp:.
+"set listchars=trail:•,extends:#,nbsp:.
 
 " Show line numbers
 set number
