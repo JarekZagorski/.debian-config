@@ -3,9 +3,4 @@ if status is-interactive
   set fish_greeting  
 end
 
-function ..
-  cd ..
-end
-
-export LESS='-r'
-export LESSOPEN='|pygmentize -P style=dracula %s'
+set LESS -r
