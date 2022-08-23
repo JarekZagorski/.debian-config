@@ -6,3 +6,6 @@ end
 function ..
   cd ..
 end
+
+export LESS='-r'
+export LESSOPEN='|pygmentize -P style=dracula %s'
