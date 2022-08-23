@@ -1,5 +1,4 @@
 vim/view/*
 vim/.netrwhist
 xfce4/help.rc
-fish/functions
-fish/fish_variables
+fish/functions/fish_prompt.fish
