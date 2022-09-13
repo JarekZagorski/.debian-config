@@ -1,0 +1,16 @@
+font:
+  normal:
+    family: Monocraft
+    style: Regular
+
+  bold:
+    family: Monocraft
+    style: Bold
+
+  italic:
+    family: Monocraft
+    style: Italic
+
+  bold_italic:
+    family: Monocraft
+    style: Bold Italic
