@@ -4,3 +4,5 @@ xfce4/help.rc
 fish/functions/fish_prompt.fish
 fish/fish_variables
 fonts/.uuid
+tmux/plugins
+tmux/*.log
