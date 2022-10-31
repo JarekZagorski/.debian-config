@@ -11,8 +11,8 @@
 import:
 #  - /path/to/alacritty.yml
 #  dracula colorscheme
-  - ~/.debian-config/alacritty/dracula.yml
   - ~/.debian-config/alacritty/ubuntumonoNERD.yml
+  - ~/.debian-config/alacritty/dracula.yml
   #- ~/.debian-config/alacritty/onedark.yml
 
 # Any items in the `env` entry below will be added as
