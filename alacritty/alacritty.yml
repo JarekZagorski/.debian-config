@@ -12,7 +12,8 @@ import:
 #  - /path/to/alacritty.yml
 #  dracula colorscheme
   - ~/.debian-config/alacritty/ubuntumonoNERD.yml
-  - ~/.debian-config/alacritty/dracula.yml
+  #- ~/.debian-config/alacritty/dracula.yml
+  - ~/.debian-config/alacritty/nordic.yml
   #- ~/.debian-config/alacritty/onedark.yml
 
 # Any items in the `env` entry below will be added as
@@ -190,9 +191,9 @@ font:
 # Colors (Tomorrow Night)
 colors:
   # Default colors
-  primary:
-    background: '#1d1f21'
-    foreground: '#c5c8c6'
+  #primary:
+    #background: '#1d1f21'
+    #foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
