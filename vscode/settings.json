@@ -1,4 +1,19 @@
 {
     "workbench.colorTheme": "One Dark Pro",
-    "redhat.telemetry.enabled": false
+    "robot.editor.4spacesTab": false,
+    "editor.stickyTabStops": true,
+    "editor.minimap.enabled": false,
+    "git.autofetch": true,
+    "ycmd.path": "C:\\Users\\Jakub\\programs\\ycmd",
+    "ycmd.use_imprecise_get_type": true,
+    "editor.suggest.preview": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.tabCompletion": "on",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "explorer.confirmDelete": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "robot.codeFormatter": "robotidy",
 }
