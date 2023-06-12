@@ -1,3 +1,12 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/JarekZagorski/vim-customization.git
+[submodule "tpm"]
+    path = tmux/plugins/tpm
+    url = https://github.com/tmux-plugins/tpm
+[submodule "tmux-powerline"]
+    path = tmux/plugins/tmux-powerline
+    url = git@github.com:erikw/tmux-powerline.git
+[submodule "tmux-sensible"]
+    path = tmux/plugins/tmux-sensible
+    url = https://git::@github.com/tmux-plugins/tmux-sensible
