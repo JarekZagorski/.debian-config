@@ -1,16 +1,4 @@
-local lsp = require('lsp-zero').preset({})
-
-
-lsp.ensure_installed({
-	'lua_ls',
-	'gopls',
-	'tsserver',
-	'clangd',
-	'jedi_language_server',
-	'bashls',
-	'marksman',
-	'robotframework_ls',
-})
+local lsp = require('lsp-zero')
 
 lsp.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
@@ -18,7 +6,20 @@ lsp.on_attach(function(client, bufnr)
 	lsp.default_keymaps({buffer = bufnr})
 end)
 
--- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+require('mason').setup({})
+require('mason-lspconfig').setup({
+	ensure_installed = {
+		'lua_ls',
+		'gopls',
+		'tsserver',
+		'clangd',
+		'jedi_language_server',
+		'bashls',
+		'marksman',
+		'robotframework_ls',
+	},
+	handlers = {
+		lsp.default_setup,
+	},
 
-lsp.setup()
+})
