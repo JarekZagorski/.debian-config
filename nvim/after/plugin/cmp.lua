@@ -15,7 +15,7 @@ cmp.setup({
 	-- ... Your other configuration ...
 
 	mapping = {
-
+        ["<CR>"] = cmp.mapping.confirm { select = true },
 		-- ... Your other mappings ...
 
 		["<Tab>"] = cmp.mapping(function(fallback)
