@@ -7,6 +7,7 @@ end
 local luasnip = require("luasnip")
 local cmp = require("cmp")
 
+---@diagnostic disable: missing-fields
 cmp.setup({
 	matching = {
 		disallow_partial_fuzzy_matching = false

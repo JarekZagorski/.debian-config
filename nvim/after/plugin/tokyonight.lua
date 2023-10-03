@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields
 require("tokyonight").setup({
 	style = 'night',
 	transparent = false,
