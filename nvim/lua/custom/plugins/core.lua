@@ -4,8 +4,7 @@ return {
 		build = ":TSUpdate",
 		config = function ()
 			local configs = require("nvim-treesitter.configs")
-            require("nvim-treesitter.install").prefer_git = true
-
+            ---@diagnostic disable: missing-fields
 			configs.setup({
 				ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", 'go', 'javascript', 'typescript' },
 				sync_install = false,
@@ -27,4 +26,17 @@ return {
 			"MunifTanjim/nui.nvim",
 		}
 	},
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        }
+    }
 }
