@@ -2,9 +2,9 @@ local telescope = require('telescope.builtin')
 local wk = require("which-key")
 
 ---@param pointer function
-local call = function (pointer, ...)
-    local arg = {...}
-    return function ()
+local call = function(pointer, ...)
+    local arg = { ... }
+    return function()
         pointer(unpack(arg))
     end
 end
@@ -53,3 +53,22 @@ wk.register({
 wk.register({
 
 }, { mode = 'v' })
+
+-- lsp-zero descriptions
+wk.register({
+    K = 'Display Hover Information',
+    g = {
+        d = 'Jump to definition',
+        D = 'Jump to Declaration',
+        i = 'List implementations',
+        o = 'Jump to type definition',
+        r = 'List all references',
+        s = 'Display signature information',
+        l = 'Show Diagnostics',
+    },
+    ['<F2>'] = 'Rename',
+    ['<F3>'] = 'Format buffer using attached lsp',
+    ['<F4>'] = 'Code action',
+    ['[d'] = 'Previous diagnostics',
+    [']d'] = 'Next diagnostics',
+}, { mode = 'n' })
