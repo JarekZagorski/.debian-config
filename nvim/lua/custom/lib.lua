@@ -25,4 +25,10 @@ function M.wrap (pointer, ...)
     end
 end
 
+-- Turns vim key combination into command
+---@param keys string
+function M.keycomb_to_command(keys)
+    return vim.api.nvim_replace_termcodes(keys, true, true, true)
+end
+
 return M
