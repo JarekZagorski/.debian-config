@@ -27,7 +27,8 @@ wk.register({
     p = {
         name = 'Project',
         f = { telescope.find_files, 'Files' },
-        v = { vim.cmd.Neotree, 'View' },
+        v = { '<cmd>Neotree toggle<cr>', 'View' },
+        g = { telescope.live_grep, 'Grep' },
     },
     a = { mark.add_file, 'Harpoon: add file' },
     y = { 'V"+y', 'Yank line to clipboard' },
@@ -49,19 +50,19 @@ wk.register({
 
 -- lsp-zero descriptions
 wk.register({
-    K = 'Display Hover Information',
+    K = { vim.lsp.buf.hover, 'Display Hover Information' },
     g = {
-        d = 'Jump to definition',
-        D = 'Jump to Declaration',
-        i = 'List implementations',
-        o = 'Jump to type definition',
-        r = 'List all references',
-        s = 'Display signature information',
-        l = 'Show Diagnostics',
+        d = {vim.lsp.buf.definition, 'Jump to definition' },
+        D = {vim.lsp.buf.declaration, 'Jump to Declaration' },
+        i = {vim.lsp.buf.implementation, 'List implementations' },
+        o = {vim.lsp.buf.type_definition, 'Jump to type definition' },
+        r = {vim.lsp.buf.references, 'List all references' },
+        s = {vim.lsp.buf.signature_help, 'Display signature information' },
+        l = {vim.diagnostic.open_float, 'Show Diagnostics' },
     },
-    ['<F2>'] = 'Rename',
-    ['<F3>'] = 'Format buffer using attached lsp',
-    ['<F4>'] = 'Code action',
-    ['[d'] = 'Previous diagnostics',
-    [']d'] = 'Next diagnostics',
+    ['<F2>'] = {vim.lsp.buf.rename, 'Rename' },
+    ['<F3>'] = {vim.lsp.buf.format, 'Format buffer using attached lsp'},
+    ['<F4>'] = {vim.lsp.buf.code_action, 'Code action'},
+    ['[d']   = {vim.diagnostic.goto_prev, 'Previous diagnostics'},
+    [']d']   = {vim.diagnostic.goto_next, 'Next diagnostics'},
 }, { mode = 'n' })
