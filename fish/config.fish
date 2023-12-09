@@ -7,6 +7,8 @@ function ..
   cd ..
 end
 
+alias vim "nvim"
+
 # meaningless comment
 
 set LESS -r
