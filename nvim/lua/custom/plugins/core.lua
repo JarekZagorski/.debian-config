@@ -38,5 +38,10 @@ return {
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
         }
-    }
+    },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        opts = {} -- this is equalent to setup({}) function
+    },
 }

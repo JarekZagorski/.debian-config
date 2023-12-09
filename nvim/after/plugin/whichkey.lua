@@ -1,13 +1,6 @@
 local telescope = require('telescope.builtin')
 local wk = require("which-key")
-
----@param pointer function
-local call = function(pointer, ...)
-    local arg = { ... }
-    return function()
-        pointer(unpack(arg))
-    end
-end
+local lib = require('custom.lib')
 
 -- Telescope
 --vim.keymap.set('n', '<leader>pf', telescope_b.find_files, {})
@@ -43,10 +36,10 @@ wk.register({
 
 -- Ctrl based segment
 wk.register({
-    ['<C-h>'] = { call(ui.nav_file, 1), 'Harpoon: file 1' },
-    ['<C-j>'] = { call(ui.nav_file, 2), 'Harpoon: file 2' },
-    ['<C-k>'] = { call(ui.nav_file, 3), 'Harpoon: file 3' },
-    ['<C-l>'] = { call(ui.nav_file, 4), 'Harpoon: file 4' },
+    ['<C-h>'] = { lib.wrap(ui.nav_file, 1), 'Harpoon: file 1' },
+    ['<C-j>'] = { lib.wrap(ui.nav_file, 2), 'Harpoon: file 2' },
+    ['<C-k>'] = { lib.wrap(ui.nav_file, 3), 'Harpoon: file 3' },
+    ['<C-l>'] = { lib.wrap(ui.nav_file, 4), 'Harpoon: file 4' },
     ['<C-e>'] = { ui.toggle_quick_menu, 'Harpoon: open menu' },
 })
 
