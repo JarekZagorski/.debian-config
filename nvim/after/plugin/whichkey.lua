@@ -26,9 +26,12 @@ local ui = require('harpoon.ui')
 wk.register({
     p = {
         name = 'Project',
-        f = { telescope.find_files, 'Files' },
-        v = { '<cmd>Neotree toggle<cr>', 'View' },
-        g = { telescope.live_grep, 'Grep' },
+        v = { '<cmd>Neotree position=current <cr>', 'View' },
+    },
+    f = {
+        name = 'File',
+        f = { telescope.find_files, 'File List' },
+        g = { telescope.live_grep, 'File Grep' },
     },
     a = { mark.add_file, 'Harpoon: add file' },
     y = { 'V"+y', 'Yank line to clipboard' },
