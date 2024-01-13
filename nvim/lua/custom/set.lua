@@ -5,12 +5,16 @@ o.tabstop = sw
 o.softtabstop = sw
 o.shiftwidth = sw
 o.expandtab = true
+
 o.nu = true
 o.rnu = true
 
 o.smartindent = true
 
 o.wrap = false
+
+o.hlsearch = false
+o.incsearch = true
 
 o.hlsearch = false
 o.incsearch = true
@@ -23,4 +27,7 @@ o.isfname:append('@-@')
 
 o.updatetime = 50
 
+o.colorcolumn = "120"
+
 vim.g.mapleader = ' '
+
